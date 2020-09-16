@@ -1,8 +1,11 @@
+#MINION GAME WITH SUB STRING SCORE FUNCTION
+#NOT FOR LONG STRINGS
+
+
 def subStrScore(string, substr):
     count = 0
     for i in range(len(string)):
         count = count + string[i:i+len(substr)].count(substr)
-    print("{}: {}".format(substr, count))
     return count
 
         
